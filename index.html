@@ -3,30 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <title>Iniciar sesión</title>
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-    <div class="contenido">
+    <div class="contenido">  
+        <!-- contenido no encapsula el formulario -->
         <div class="logo">
             <img src="2.png" alt="Imagen creada por mi twin">
         </div>
+        <!-- creo que deberia ser una lista esto -->
         <div class="nav">
-            <a>TIENDA</a>
-            <a>COMUNIDAD</a>
-            <a>ACERCA DE</a>
-            <a>SOPORTE</a>
+            <!-- <ul class="letraazul">TIENDA</ul>
+            <ul class="letrablanca">COMUNIDAD</ul> -->
+            <a class="letraazul">TIENDA</a>
+            <a class="letrablanca">COMUNIDAD</a>
+            <a class="letrablanca">ACERCA DE</a>
+            <a class="letrablanca">SOPORTE</a>
         </div>
     </div>
     <div class="logeo">
         <div class="formulario">
             <form action="procesa.php" method="post">
-                <h4>Inicia sesión con tu nombre de cuenta</h4>
+                <h4 class="letraazul">Inicia sesión con tu nombre de cuenta</h4>
                 <input type="text" name="usuario">
-                <h4>Contraseña</h4>
+                <h4 class="letrablanca">Contraseña</h4>
                 <input type="text" name="contraseña">
                 <br>
                 <input type="checkbox" value="Recordarme">
                 <br>
-                <input type="submit" value="Iniciar sesión">
+                <input type= "submit" class="submit_azul" value="Iniciar sesión">
             </form>
         </div>
     </div>
